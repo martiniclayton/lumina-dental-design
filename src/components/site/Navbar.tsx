@@ -86,7 +86,7 @@ export function Navbar() {
             scrolled ? "text-ink" : "text-background",
           )}
         >
-          {open ? <Menu className="size-6" strokeWidth={1} /> : <Menu className="size-6" strokeWidth={1} />}
+          <Menu className="size-6" strokeWidth={1} />
         </button>
       </div>
 
