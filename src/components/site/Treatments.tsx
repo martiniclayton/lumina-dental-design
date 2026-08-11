@@ -52,9 +52,11 @@ export function Treatments() {
             </p>
           </Reveal>
 
-          {treatments.slice(3).map((t, i) => (
-            <TreatmentCard key={t.n} {...t} delay={i * 80} wide={i === 1} />
+          {treatments.slice(3, 7).map((t, i) => (
+            <TreatmentCard key={t.n} {...t} delay={i * 80} />
           ))}
+
+          <TreatmentCard {...treatments[7]!} delay={80} wide />
         </div>
       </div>
     </section>
