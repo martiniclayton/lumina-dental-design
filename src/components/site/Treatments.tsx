@@ -80,7 +80,7 @@ function TreatmentCard({
     <Reveal
       delay={delay}
       className={`group relative bg-background p-8 transition-colors duration-500 hover:bg-lilac-wash md:p-10 ${
-        wide ? "sm:col-span-2 lg:col-span-1" : ""
+        wide ? "sm:col-span-2 lg:col-span-4" : ""
       }`}
     >
       <div className="flex items-start justify-between">
