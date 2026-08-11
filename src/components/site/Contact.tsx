@@ -93,7 +93,7 @@ export function Contact() {
               </div>
               <button
                 type="submit"
-                className="arrow-move inline-flex w-full items-center justify-center gap-3 border border-lilac/50 bg-lilac-wash px-9 py-4 text-[0.75rem] tracking-[0.14em] uppercase text-accent-foreground transition-colors duration-400 hover:bg-lilac hover:text-primary-foreground sm:w-auto"
+                className="arrow-move inline-flex w-full items-center justify-center gap-3 rounded-lg border border-lilac/40 bg-lilac-wash px-8 py-3.5 text-[0.85rem] tracking-[0.01em] text-accent-foreground transition-colors duration-400 hover:bg-lilac hover:text-primary-foreground sm:w-auto"
               >
                 Enviar mensagem
                 <ArrowRight className="arrow size-4" strokeWidth={1.2} />

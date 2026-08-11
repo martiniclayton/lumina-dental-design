@@ -27,7 +27,7 @@ export function Navbar() {
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow,backdrop-filter] duration-500",
         scrolled
-          ? "border-b border-border/70 bg-background/80 shadow-soft backdrop-blur-xl"
+          ? "border-b border-border/50 bg-background/70 shadow-[0_1px_20px_rgb(0_0_0/0.04)] backdrop-blur-2xl"
           : "bg-transparent",
       )}
     >
@@ -56,7 +56,7 @@ export function Navbar() {
               key={l.href}
               href={l.href}
               className={cn(
-                "relative text-[0.8rem] tracking-wide transition-colors duration-300",
+                "relative text-[0.82rem] tracking-[0.01em] transition-colors duration-300",
                 scrolled
                   ? "text-muted-foreground hover:text-lilac"
                   : "text-background/80 hover:text-background",
@@ -68,10 +68,10 @@ export function Navbar() {
           <a
             href="#contato"
             className={cn(
-              "border px-6 py-3 text-[0.75rem] tracking-[0.14em] uppercase transition-all duration-400",
+              "rounded-lg border px-5 py-2.5 text-[0.8rem] tracking-[0.01em] transition-all duration-400",
               scrolled
-                ? "border-lilac/50 bg-lilac-wash text-accent-foreground hover:bg-lilac hover:text-primary-foreground"
-                : "border-background/50 text-background hover:bg-background/15",
+                ? "border-lilac/40 bg-lilac-wash text-accent-foreground hover:bg-lilac hover:text-primary-foreground"
+                : "glass-light text-background",
             )}
           >
             Agendar consulta
@@ -116,7 +116,7 @@ export function Navbar() {
           <a
             href="#contato"
             onClick={() => setOpen(false)}
-            className="mt-8 border border-lilac/50 bg-lilac-wash px-6 py-4 text-center text-[0.75rem] tracking-[0.14em] uppercase text-accent-foreground"
+            className="mt-8 rounded-lg border border-lilac/40 bg-lilac-wash px-6 py-4 text-center text-[0.85rem] text-accent-foreground"
           >
             Agendar consulta
           </a>

@@ -28,7 +28,7 @@ export function CtaBand() {
           </p>
           <a
             href="#contato"
-            className="arrow-move mt-12 inline-flex items-center gap-3 bg-ink px-9 py-4 text-[0.75rem] tracking-[0.14em] uppercase text-primary-foreground transition-colors duration-400 hover:bg-primary"
+            className="arrow-move mt-12 inline-flex items-center gap-3 rounded-lg bg-ink px-8 py-3.5 text-[0.85rem] tracking-[0.01em] text-primary-foreground transition-colors duration-400 hover:bg-primary"
           >
             Agendar consulta
             <ArrowRight className="arrow size-4" strokeWidth={1.2} />
