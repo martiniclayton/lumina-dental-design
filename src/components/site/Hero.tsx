@@ -11,8 +11,8 @@ export function Hero() {
         height={1280}
         className="absolute inset-0 size-full object-cover"
       />
-      <div className="absolute inset-0 bg-ink/20" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink/45 via-transparent to-ink/10" />
+      <div className="absolute inset-0 bg-ink/15" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-ink/15" />
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-[1400px] flex-col justify-end px-6 pb-24 md:px-10 md:pb-32">
         <div className="max-w-2xl">
