@@ -13,20 +13,23 @@ import { Footer } from "@/components/site/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lumière Odontologia | Clínica odontológica premium em São Paulo" },
+      { title: "NC Odontologia | Clínica odontológica em Cidade Dutra, SP" },
       {
         name: "description",
         content:
-          "Odontologia contemporânea nos Jardins: estética dental, implantes e ortodontia com tecnologia, precisão e uma experiência de cuidado exclusiva.",
+          "Há 18 anos em São Paulo: harmonização facial, ortodontia, implantes e próteses com atendimento humanizado, tecnologia e resultados naturais.",
       },
-      { property: "og:title", content: "Lumière Odontologia | Clínica premium em São Paulo" },
+      { property: "og:title", content: "NC Odontologia | Naturalidade e confiança na odontologia" },
       {
         property: "og:description",
         content:
-          "Estética dental, implantes e ortodontia com tecnologia e cuidado. Agende sua avaliação na Lumière.",
+          "Tratamentos personalizados com segurança, conforto e resultados naturais. Agende sua avaliação na NC Odontologia.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
+
   component: Index,
 });
 
