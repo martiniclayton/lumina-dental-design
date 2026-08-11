@@ -3,14 +3,36 @@ import detailImg from "@/assets/detail.jpg";
 import { Reveal } from "./Reveal";
 
 const treatments = [
-  { n: "01", name: "Estética Dental", text: "Harmonia entre forma, cor e proporção do sorriso." },
-  { n: "02", name: "Clareamento", text: "Protocolos seguros para um tom natural e uniforme." },
-  { n: "03", name: "Facetas", text: "Laminados ultrafinos com planejamento digital prévio." },
-  { n: "04", name: "Implantes", text: "Cirurgia guiada, reabilitação precisa e previsível." },
-  { n: "05", name: "Ortodontia", text: "Alinhadores transparentes e aparelhos discretos." },
-  { n: "06", name: "Reabilitação Oral", text: "Devolvendo função, estética e equilíbrio." },
-  { n: "07", name: "Periodontia", text: "Saúde gengival como base de todo tratamento." },
-  { n: "08", name: "Odontologia Preventiva", text: "Acompanhamento contínuo e diagnóstico precoce." },
+  {
+    n: "01",
+    name: "Harmonização Facial",
+    text: "Procedimentos cuidadosamente planejados para realçar sua beleza natural, preservando suas características com segurança e resultados harmônicos.",
+  },
+  {
+    n: "02",
+    name: "Ortodontia",
+    text: "Conquiste o alinhamento ideal com tratamentos ortodônticos personalizados, discretos e eficazes para o seu perfil.",
+  },
+  {
+    n: "03",
+    name: "Dentística",
+    text: "Transforme seu sorriso com tratamentos estéticos minimamente invasivos, planejados para resultados naturais e harmoniosos que valorizam quem você é.",
+  },
+  {
+    n: "04",
+    name: "Periodontia",
+    text: "A saúde do seu sorriso começa nas gengivas. Cuidamos das estruturas de suporte dos seus dentes para mantê-los saudáveis e estáveis.",
+  },
+  {
+    n: "05",
+    name: "Implante Dental",
+    text: "Recupere a segurança de morder, falar e sorrir com implantes de alta precisão — função e estética como as de um dente natural.",
+  },
+  {
+    n: "06",
+    name: "Prótese Dental",
+    text: "Devolver a função e a beleza do seu sorriso é possível com soluções protéticas planejadas para as suas necessidades.",
+  },
 ];
 
 export function Treatments() {
@@ -19,44 +41,44 @@ export function Treatments() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid gap-8 md:grid-cols-12 md:items-end">
           <Reveal className="md:col-span-7">
-            <p className="eyebrow text-lilac">Tratamentos</p>
+            <p className="eyebrow text-lilac">Especialidades</p>
             <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
-              Tratamentos pensados para você.
+              Nossos Tratamentos
             </h2>
           </Reveal>
           <Reveal className="md:col-span-4 md:col-start-9" delay={80}>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Do cuidado preventivo à reabilitação completa, cada protocolo é definido a partir de um
-              diagnóstico individual.
+              Do preventivo ao estético — cuidado completo para o seu sorriso.
             </p>
           </Reveal>
         </div>
 
-        <div className="mt-20 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
           {treatments.slice(0, 3).map((t, i) => (
             <TreatmentCard key={t.n} {...t} delay={i * 80} />
           ))}
 
-          <Reveal delay={240} className="relative overflow-hidden bg-background">
+          <Reveal
+            delay={240}
+            className="relative overflow-hidden bg-background sm:col-span-2 lg:col-span-3"
+          >
             <img
               src={detailImg}
               alt="Detalhe arquitetônico claro com linha em lilás"
               width={1200}
               height={900}
               loading="lazy"
-              className="size-full min-h-56 object-cover"
+              className="h-56 w-full object-cover md:h-64"
             />
             <div className="absolute inset-0 bg-lilac/8" />
-            <p className="absolute bottom-6 left-6 max-w-[14ch] font-display text-lg font-medium tracking-tight text-ink">
-              Diagnóstico digital em cada etapa
+            <p className="absolute bottom-6 left-6 max-w-[22ch] font-display text-lg font-medium tracking-tight text-ink md:left-10">
+              Tecnologia e precisão em cada etapa do seu tratamento
             </p>
           </Reveal>
 
-          {treatments.slice(3, 7).map((t, i) => (
+          {treatments.slice(3).map((t, i) => (
             <TreatmentCard key={t.n} {...t} delay={i * 80} />
           ))}
-
-          <TreatmentCard {...treatments[7]!} delay={80} wide />
         </div>
       </div>
     </section>
@@ -68,20 +90,16 @@ function TreatmentCard({
   name,
   text,
   delay,
-  wide,
 }: {
   n: string;
   name: string;
   text: string;
   delay: number;
-  wide?: boolean;
 }) {
   return (
     <Reveal
       delay={delay}
-      className={`group relative bg-background p-8 transition-colors duration-500 hover:bg-lilac-wash md:p-10 ${
-        wide ? "sm:col-span-2 lg:col-span-4" : ""
-      }`}
+      className="group relative bg-background p-8 transition-colors duration-500 hover:bg-lilac-wash md:p-10"
     >
       <div className="flex items-start justify-between">
         <span className="eyebrow text-muted-foreground">{n}</span>
@@ -92,6 +110,12 @@ function TreatmentCard({
       </div>
       <h3 className="mt-16 text-[1.2rem] font-medium leading-snug tracking-tight">{name}</h3>
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{text}</p>
+      <a
+        href="#contato"
+        className="eyebrow mt-8 inline-block border-b border-lilac/50 pb-1 text-ink transition-colors duration-300 hover:text-lilac"
+      >
+        Saiba mais
+      </a>
     </Reveal>
   );
 }

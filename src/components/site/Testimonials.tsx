@@ -3,14 +3,14 @@ import { Reveal } from "./Reveal";
 
 const small = [
   {
-    name: "Mariana Alencar",
-    initials: "MA",
-    text: "Cada detalhe pensado: do agendamento ao acompanhamento pós-tratamento. Nunca me senti tão segura.",
+    name: "Gediel Souza Pereira",
+    initials: "GS",
+    text: "Atendimento excelente do início ao fim. A Dra. Mayara explicou cada etapa com muita clareza e paciência.",
   },
   {
-    name: "Rodrigo Camargo",
-    initials: "RC",
-    text: "Ambiente impecável e uma equipe que explica cada etapa com muita clareza.",
+    name: "Ricardo Oliveira",
+    initials: "RO",
+    text: "Profissionalismo e cuidado em cada detalhe. Saí da clínica seguro e muito satisfeito com o resultado.",
   },
 ];
 
@@ -19,10 +19,13 @@ export function Testimonials() {
     <section id="depoimentos" className="bg-background py-28 md:py-36">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <Reveal className="max-w-2xl">
-          <p className="eyebrow text-lilac">Depoimentos</p>
+          <p className="eyebrow text-lilac">Depoimentos de pacientes</p>
           <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
-            Experiências que vão além do sorriso.
+            O que dizem sobre nós
           </h2>
+          <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+            A satisfação dos nossos pacientes é a nossa maior conquista.
+          </p>
         </Reveal>
 
         <div className="mt-20 grid gap-6 md:grid-cols-12">
@@ -30,16 +33,16 @@ export function Testimonials() {
             <figure className="glass-panel h-full border border-border p-10 shadow-soft md:p-14">
               <Rating count={5} />
               <blockquote className="mt-8 font-display text-[1.3rem] font-normal leading-[1.45] tracking-tight text-ink md:text-[1.6rem]">
-                “Eu procurava um tratamento estético que não parecesse artificial. O planejamento foi
-                minucioso e o resultado ficou exatamente como imaginei — natural, leve, meu.”
+                “Atendimento impecável do Dr. Ygor e de toda a equipe. Profissionalismo, honestidade e
+                um cuidado humanizado que faz toda a diferença. Recomendo de olhos fechados.”
               </blockquote>
               <figcaption className="mt-10 flex items-center gap-4">
                 <span className="flex size-11 items-center justify-center rounded-full bg-lilac-wash text-[0.7rem] tracking-[0.12em] text-accent-foreground">
-                  LB
+                  GK
                 </span>
                 <span>
-                  <span className="block text-sm text-ink">Luiza Bernardes</span>
-                  <span className="eyebrow text-muted-foreground">Facetas e clareamento</span>
+                  <span className="block text-sm text-ink">Gabriel Kineipp</span>
+                  <span className="eyebrow text-muted-foreground">Paciente</span>
                 </span>
               </figcaption>
             </figure>

@@ -1,11 +1,12 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
 import clinicImg from "@/assets/clinic.jpg";
 import { Reveal } from "./Reveal";
 
-const facts = [
-  { title: "Tecnologia", text: "Equipamentos modernos." },
-  { title: "Conforto", text: "Ambiente pensado para você." },
-  { title: "Precisão", text: "Planejamento individualizado." },
+const benefits = [
+  "Planejamento personalizado para cada paciente.",
+  "Equipe especializada e em constante atualização.",
+  "Tecnologia que proporciona mais conforto e precisão.",
+  "Atendimento acolhedor, transparente e focado em você.",
 ];
 
 export function About() {
@@ -28,40 +29,51 @@ export function About() {
 
         <div className="md:col-span-5 md:col-start-8 md:pt-10">
           <Reveal>
-            <p className="eyebrow text-lilac">A clínica</p>
+            <p className="eyebrow text-lilac">Sobre a clínica</p>
             <h2 className="mt-6 text-[1.8rem] font-medium leading-[1.18] tracking-tight md:text-[2.4rem]">
-              Conheça uma nova forma de cuidar do seu sorriso.
+              O cuidado começa muito antes do tratamento.
             </h2>
             <div className="mt-8 space-y-5 text-sm leading-relaxed text-muted-foreground">
               <p>
-                A Lumière nasceu do encontro entre odontologia de precisão e uma experiência de
-                acolhimento. Cada ambiente foi projetado com materiais claros, luz natural e silêncio
-                — para que a consulta seja um momento de calma.
+                Na NC Odontologia, acreditamos que um bom tratamento começa ouvindo. Cada paciente
+                chega até nós com uma história, expectativas e necessidades diferentes. Por isso,
+                dedicamos tempo para entender você, esclarecer suas dúvidas e construir um plano de
+                tratamento personalizado.
               </p>
               <p>
-                Trabalhamos com diagnóstico digital, planejamento estético individualizado e um
-                acompanhamento próximo em todas as etapas do tratamento.
+                Há mais de 18 anos, unimos experiência, tecnologia e um atendimento verdadeiramente
+                humanizado para oferecer tratamentos seguros, naturais e realizados com excelência em
+                cada detalhe.
+              </p>
+              <p>
+                Nosso compromisso é que você se sinta acolhido, seguro e confiante desde a primeira
+                consulta até a conclusão do seu tratamento.
               </p>
             </div>
           </Reveal>
 
           <Reveal delay={120}>
-            <dl className="mt-12 grid gap-px border-t border-border sm:grid-cols-3">
-              {facts.map((f) => (
-                <div key={f.title} className="border-b border-border py-6 sm:border-b-0 sm:pr-6">
-                  <dt className="eyebrow text-ink">{f.title}</dt>
-                  <dd className="mt-2 text-sm text-muted-foreground">{f.text}</dd>
-                </div>
+            <ul className="mt-12 grid gap-px border-t border-border">
+              {benefits.map((b) => (
+                <li key={b} className="flex items-start gap-3 border-b border-border py-5">
+                  <Check className="mt-0.5 size-4 shrink-0 text-lilac" strokeWidth={1.4} />
+                  <span className="text-sm text-muted-foreground">{b}</span>
+                </li>
               ))}
-            </dl>
+            </ul>
 
-            <a
-              href="#tratamentos"
-              className="arrow-move mt-12 inline-flex items-center gap-3 border-b border-lilac/60 pb-2 text-[0.78rem] tracking-wide text-ink"
-            >
-              Conheça nossa clínica
-              <ArrowRight className="arrow size-4 text-lilac" strokeWidth={1.2} />
-            </a>
+            <div className="mt-12 flex flex-wrap items-center gap-6">
+              <span className="eyebrow rounded-lg bg-lilac-wash px-4 py-2.5 text-accent-foreground">
+                18 anos de confiança
+              </span>
+              <a
+                href="#contato"
+                className="arrow-move inline-flex items-center gap-3 border-b border-lilac/60 pb-2 text-[0.78rem] tracking-wide text-ink"
+              >
+                Agendar minha avaliação
+                <ArrowRight className="arrow size-4 text-lilac" strokeWidth={1.2} />
+              </a>
+            </div>
           </Reveal>
         </div>
       </div>

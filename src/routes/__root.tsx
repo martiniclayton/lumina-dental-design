@@ -78,11 +78,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lumière Odontologia" },
-      { name: "description", content: "Clínica odontológica premium em São Paulo." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lumière Odontologia" },
-      { property: "og:description", content: "Clínica odontológica premium em São Paulo." },
+      { title: "NC Odontologia" },
+      { name: "description", content: "Clínica odontológica em Cidade Dutra, São Paulo." },
+      { name: "author", content: "NC Odontologia" },
+      { property: "og:title", content: "NC Odontologia" },
+      { property: "og:description", content: "Clínica odontológica em Cidade Dutra, São Paulo." },
+
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },

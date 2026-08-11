@@ -3,12 +3,10 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { label: "Início", href: "#inicio" },
   { label: "A clínica", href: "#clinica" },
-  { label: "Profissionais", href: "#profissionais" },
-  { label: "Tratamentos", href: "#tratamentos" },
-  { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Contato", href: "#contato" },
+  { label: "Serviços", href: "#tratamentos" },
+  { label: "Pacientes", href: "#depoimentos" },
+  { label: "Localização", href: "#contato" },
 ];
 
 export function Navbar() {
@@ -39,7 +37,7 @@ export function Navbar() {
             scrolled ? "text-ink" : "text-background",
           )}
         >
-          <span className="font-display text-[1.35rem] font-medium leading-none tracking-[-0.01em]">Lumière</span>
+          <span className="font-display text-[1.35rem] font-medium leading-none tracking-[-0.01em]">NC</span>
           <span
             className={cn(
               "eyebrow hidden text-[0.55rem] sm:block",
@@ -97,7 +95,7 @@ export function Navbar() {
         )}
       >
         <div className="flex h-20 items-center justify-between px-6">
-          <span className="font-display text-[1.35rem] font-medium tracking-tight text-ink">Lumière</span>
+          <span className="font-display text-[1.35rem] font-medium tracking-tight text-ink">NC Odontologia</span>
           <button aria-label="Fechar menu" onClick={() => setOpen(false)} className="text-ink">
             <X className="size-6" strokeWidth={1} />
           </button>

@@ -3,18 +3,18 @@ import { Reveal } from "./Reveal";
 const items = [
   {
     n: "01",
-    title: "Atendimento personalizado",
-    text: "Cada paciente recebe um cuidado individualizado, respeitando suas necessidades e objetivos.",
+    title: "18 anos de excelência",
+    text: "Uma trajetória construída com dedicação, confiança e milhares de sorrisos transformados.",
   },
   {
     n: "02",
-    title: "Tecnologia e precisão",
-    text: "Tecnologia moderna para proporcionar diagnósticos mais precisos e tratamentos eficientes.",
+    title: "Naturalidade em cada tratamento",
+    text: "Cada tratamento é planejado para valorizar seu sorriso e respeitar suas características, com resultados naturais e duradouros.",
   },
   {
     n: "03",
-    title: "Experiência diferenciada",
-    text: "Um ambiente pensado para oferecer conforto, tranquilidade e uma experiência odontológica superior.",
+    title: "Atendimento humanizado",
+    text: "Você será acolhido com atenção, transparência e um plano de tratamento pensado para as suas necessidades.",
   },
 ];
 
@@ -24,15 +24,14 @@ export function Special() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid gap-8 md:grid-cols-12">
           <Reveal className="md:col-span-6">
-            <p className="eyebrow text-lilac">Filosofia</p>
+            <p className="eyebrow text-lilac">Por que nos escolher</p>
             <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
-              O que nos torna especial
+              O que nos torna especiais
             </h2>
           </Reveal>
           <Reveal className="md:col-span-5 md:col-start-8 md:pt-16" delay={80}>
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Uma clínica desenhada em torno de detalhes: escuta atenta, planejamento preciso e uma
-              estética que respeita a naturalidade de cada sorriso.
+              Mais do que tratar sorrisos, cuidamos de pessoas.
             </p>
           </Reveal>
         </div>

@@ -1,27 +1,20 @@
 import { ArrowRight } from "lucide-react";
 import p1 from "@/assets/pro-1.jpg";
 import p2 from "@/assets/pro-2.jpg";
-import p3 from "@/assets/pro-3.jpg";
 import { Reveal } from "./Reveal";
 
 const team = [
   {
-    img: p1,
-    name: "Dra. Helena Vasconcelos",
-    role: "Estética e Reabilitação Oral",
-    text: "Planejamento estético digital com foco em resultados naturais e duradouros.",
-  },
-  {
     img: p2,
-    name: "Dr. Rafael Monteiro",
-    role: "Implantodontia",
-    text: "Cirurgias guiadas por tecnologia 3D, com previsibilidade e conforto no pós-operatório.",
+    name: "Dr. Ygor",
+    role: "Cirurgião-dentista",
+    text: "Atendimento técnico e humanizado, com planejamento individual para cada paciente.",
   },
   {
-    img: p3,
-    name: "Dra. Camila Duarte",
-    role: "Ortodontia",
-    text: "Alinhadores invisíveis e ortodontia contemporânea para cada fase da vida.",
+    img: p1,
+    name: "Dra. Mayara",
+    role: "Cirurgiã-dentista",
+    text: "Cuidado atento em cada etapa, priorizando conforto, segurança e resultados naturais.",
   },
 ];
 
@@ -30,13 +23,16 @@ export function Team() {
     <section id="profissionais" className="bg-background py-28 md:py-36">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <Reveal className="max-w-2xl">
-          <p className="eyebrow text-lilac">Equipe</p>
+          <p className="eyebrow text-lilac">Profissionais</p>
           <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
-            Especialistas que cuidam de cada detalhe.
+            Profissionais dedicados ao seu sorriso
           </h2>
+          <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+            Uma equipe que une técnica de excelência a um cuidado genuinamente humano.
+          </p>
         </Reveal>
 
-        <div className="mt-20 grid gap-px bg-border md:grid-cols-3">
+        <div className="mt-20 grid gap-px bg-border md:grid-cols-2">
           {team.map((m, i) => (
             <Reveal
               key={m.name}
@@ -60,7 +56,7 @@ export function Team() {
                 href="#contato"
                 className="arrow-move mt-8 inline-flex items-center gap-2 text-[0.78rem] tracking-wide text-ink"
               >
-                Ver perfil
+                Agendar consulta
                 <ArrowRight className="arrow size-3.5 text-lilac" strokeWidth={1.2} />
               </a>
             </Reveal>
