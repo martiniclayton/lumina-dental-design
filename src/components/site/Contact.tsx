@@ -21,7 +21,7 @@ export function Contact() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <Reveal className="max-w-2xl">
           <p className="eyebrow text-lilac">Contato</p>
-          <h2 className="mt-6 text-[2.2rem] leading-[1.1] md:text-[3.2rem]">
+          <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
             Estamos esperando por você.
           </h2>
         </Reveal>
@@ -41,7 +41,7 @@ export function Contact() {
               <div className="flex aspect-[16/10] items-center justify-center">
                 <div className="text-center">
                   <MapPin className="mx-auto size-5 text-lilac" strokeWidth={1.2} />
-                  <p className="mt-4 font-display text-xl text-ink">Jardins — São Paulo</p>
+                  <p className="mt-4 font-display text-lg font-medium tracking-tight text-ink">Jardins — São Paulo</p>
                   <p className="eyebrow mt-2 text-muted-foreground">Estacionamento com valet</p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export function Contact() {
               </div>
               <button
                 type="submit"
-                className="arrow-move inline-flex w-full items-center justify-center gap-3 border border-lilac/50 bg-lilac-wash px-9 py-4 text-[0.75rem] tracking-[0.14em] uppercase text-accent-foreground transition-colors duration-400 hover:bg-lilac hover:text-primary-foreground sm:w-auto"
+                className="arrow-move inline-flex w-full items-center justify-center gap-3 rounded-lg border border-lilac/40 bg-lilac-wash px-8 py-3.5 text-[0.85rem] tracking-[0.01em] text-accent-foreground transition-colors duration-400 hover:bg-lilac hover:text-primary-foreground sm:w-auto"
               >
                 Enviar mensagem
                 <ArrowRight className="arrow size-4" strokeWidth={1.2} />

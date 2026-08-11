@@ -11,37 +11,32 @@ export function Hero() {
         height={1280}
         className="absolute inset-0 size-full object-cover"
       />
-      <div className="absolute inset-0 bg-ink/25" />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink/55 via-ink/10 to-ink/20" />
+      <div className="absolute inset-0 bg-ink/15" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-ink/15" />
 
-      <div className="relative mx-auto flex min-h-[100svh] max-w-[1400px] flex-col justify-end px-6 pb-20 md:px-10 md:pb-28">
-        <div className="grid gap-10 md:grid-cols-12 md:items-end">
-          <div className="md:col-span-8">
-            <p className="eyebrow text-background/75">Odontologia • Estética • Cuidado</p>
-            <h1 className="mt-6 max-w-[16ch] text-[3rem] leading-[1.02] text-background sm:text-[4.2rem] md:text-[5.4rem]">
-              Seu sorriso, elevado a outro nível.
-            </h1>
-          </div>
-          <div className="md:col-span-4 md:pb-3">
-            <div className="mb-8 h-px w-16 bg-lilac-soft/70" />
-            <p className="max-w-sm text-sm leading-relaxed text-background/80">
-              Odontologia contemporânea, tecnologia e cuidado em uma experiência pensada para você.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-8">
-              <a
-                href="#contato"
-                className="arrow-move glass-panel inline-flex items-center gap-3 px-7 py-4 text-[0.75rem] tracking-[0.14em] uppercase text-ink transition-colors duration-400 hover:bg-background"
-              >
-                Agendar consulta
-                <ArrowRight className="arrow size-4" strokeWidth={1.2} />
-              </a>
-              <a
-                href="#clinica"
-                className="border-b border-background/40 pb-1 text-[0.78rem] tracking-wide text-background/85 transition-colors duration-300 hover:border-background"
-              >
-                Conheça a clínica
-              </a>
-            </div>
+      <div className="relative mx-auto flex min-h-[100svh] max-w-[1400px] flex-col justify-end px-6 pb-24 md:px-10 md:pb-32">
+        <div className="max-w-2xl">
+          <p className="eyebrow text-background/70">Odontologia premium</p>
+          <h1 className="mt-7 max-w-[22ch] text-[2.1rem] font-medium leading-[1.15] tracking-[-0.03em] text-background sm:text-[2.6rem] md:text-[3.2rem]">
+            Seu sorriso, elevado a outro nível.
+          </h1>
+          <p className="mt-7 max-w-md text-[0.95rem] leading-relaxed text-background/75">
+            Tecnologia, precisão e cuidado em uma experiência pensada para você.
+          </p>
+          <div className="mt-12 flex flex-wrap items-center gap-8">
+            <a
+              href="#contato"
+              className="arrow-move glass-light inline-flex items-center gap-3 rounded-lg px-7 py-3.5 text-[0.8rem] tracking-[0.02em] text-background transition-colors duration-400"
+            >
+              Agendar consulta
+              <ArrowRight className="arrow size-4" strokeWidth={1.4} />
+            </a>
+            <a
+              href="#clinica"
+              className="border-b border-background/30 pb-1 text-[0.82rem] tracking-wide text-background/85 transition-colors duration-300 hover:border-background"
+            >
+              Conheça a clínica
+            </a>
           </div>
         </div>
       </div>

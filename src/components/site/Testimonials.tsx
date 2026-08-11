@@ -20,7 +20,7 @@ export function Testimonials() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <Reveal className="max-w-2xl">
           <p className="eyebrow text-lilac">Depoimentos</p>
-          <h2 className="mt-6 text-[2.2rem] leading-[1.1] md:text-[3.2rem]">
+          <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
             Experiências que vão além do sorriso.
           </h2>
         </Reveal>
@@ -29,7 +29,7 @@ export function Testimonials() {
           <Reveal className="md:col-span-7">
             <figure className="glass-panel h-full border border-border p-10 shadow-soft md:p-14">
               <Rating count={5} />
-              <blockquote className="mt-8 font-display text-[1.7rem] leading-[1.35] text-ink md:text-[2.1rem]">
+              <blockquote className="mt-8 font-display text-[1.3rem] font-normal leading-[1.45] tracking-tight text-ink md:text-[1.6rem]">
                 “Eu procurava um tratamento estético que não parecesse artificial. O planejamento foi
                 minucioso e o resultado ficou exatamente como imaginei — natural, leve, meu.”
               </blockquote>

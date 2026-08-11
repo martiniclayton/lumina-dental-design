@@ -12,7 +12,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid gap-14 md:grid-cols-12">
           <div className="md:col-span-5">
-            <span className="font-display text-[1.8rem] text-ink">Lumière</span>
+            <span className="font-display text-[1.5rem] font-medium tracking-tight text-ink">Lumière</span>
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Odontologia contemporânea em São Paulo. Precisão clínica, estética natural e uma
               experiência pensada em cada detalhe.
