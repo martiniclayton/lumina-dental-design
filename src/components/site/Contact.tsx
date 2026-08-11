@@ -3,10 +3,14 @@ import { toast } from "sonner";
 import { Reveal } from "./Reveal";
 
 const info = [
-  { label: "Endereço", value: "Rua Haddock Lobo, 1420 — Jardins, São Paulo" },
-  { label: "Telefone", value: "(11) 4002-8922" },
-  { label: "WhatsApp", value: "Fale conosco" },
-  { label: "Horário de atendimento", value: "Segunda a sexta, 09h — 19h" },
+  {
+    label: "Endereço",
+    value: "Rua Rubem Souto de Araújo, 40 — Cidade Dutra, São Paulo - SP · CEP 04835-080",
+  },
+  { label: "Referência", value: "Próximo ao Terminal Grajaú" },
+  { label: "Telefone / WhatsApp", value: "(11) 9 1747-0620" },
+  { label: "E-mail", value: "ncodontologia99@gmail.com" },
+  { label: "Horários", value: "Segunda a sexta: 09:00 às 18:00 · Sábado: 09:00 às 13:00" },
 ];
 
 const fields = [
@@ -20,9 +24,9 @@ export function Contact() {
     <section id="contato" className="bg-background py-28 md:py-36">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <Reveal className="max-w-2xl">
-          <p className="eyebrow text-lilac">Contato</p>
+          <p className="eyebrow text-lilac">Localização</p>
           <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
-            Estamos esperando por você.
+            Nossa Localização
           </h2>
         </Reveal>
 
@@ -41,15 +45,19 @@ export function Contact() {
               <div className="flex aspect-[16/10] items-center justify-center">
                 <div className="text-center">
                   <MapPin className="mx-auto size-5 text-lilac" strokeWidth={1.2} />
-                  <p className="mt-4 font-display text-lg font-medium tracking-tight text-ink">Jardins — São Paulo</p>
-                  <p className="eyebrow mt-2 text-muted-foreground">Estacionamento com valet</p>
+                  <p className="mt-4 font-display text-lg font-medium tracking-tight text-ink">
+                    Cidade Dutra — São Paulo
+                  </p>
+                  <p className="eyebrow mt-2 text-muted-foreground">Próximo ao Terminal Grajaú</p>
                 </div>
               </div>
               <div aria-hidden className="pointer-events-none absolute inset-6 border border-lilac-soft/50" />
             </div>
 
             <a
-              href="#contato"
+              href="https://maps.google.com/?q=Rua+Rubem+Souto+de+Araújo,+40+-+Cidade+Dutra,+São+Paulo"
+              target="_blank"
+              rel="noopener noreferrer"
               className="arrow-move mt-8 inline-flex items-center gap-3 border-b border-lilac/60 pb-2 text-[0.78rem] tracking-wide text-ink"
             >
               Como chegar
@@ -95,7 +103,7 @@ export function Contact() {
                 type="submit"
                 className="arrow-move inline-flex w-full items-center justify-center gap-3 rounded-lg border border-lilac/40 bg-lilac-wash px-8 py-3.5 text-[0.85rem] tracking-[0.01em] text-accent-foreground transition-colors duration-400 hover:bg-lilac hover:text-primary-foreground sm:w-auto"
               >
-                Enviar mensagem
+                Agendar minha avaliação
                 <ArrowRight className="arrow size-4" strokeWidth={1.2} />
               </button>
             </form>

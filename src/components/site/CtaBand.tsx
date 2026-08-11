@@ -21,18 +21,22 @@ export function CtaBand() {
         <Reveal>
           <p className="eyebrow text-lilac">Agendamento</p>
           <h2 className="mx-auto mt-8 max-w-[24ch] text-[2rem] font-medium leading-[1.12] tracking-tight md:text-[2.9rem]">
-            Seu próximo sorriso começa aqui.
+            Vamos conversar sobre o seu sorriso?
           </h2>
-          <p className="mx-auto mt-8 max-w-md text-sm leading-relaxed text-muted-foreground">
-            Agende uma avaliação e descubra uma experiência odontológica feita para você.
+          <p className="mx-auto mt-8 max-w-lg text-sm leading-relaxed text-muted-foreground">
+            Nossa equipe está pronta para entender sua necessidade e indicar o tratamento mais
+            adequado para você.
           </p>
           <a
             href="#contato"
             className="arrow-move mt-12 inline-flex items-center gap-3 rounded-lg bg-ink px-8 py-3.5 text-[0.85rem] tracking-[0.01em] text-primary-foreground transition-colors duration-400 hover:bg-primary"
           >
-            Agendar consulta
+            Agendar minha avaliação
             <ArrowRight className="arrow size-4" strokeWidth={1.2} />
           </a>
+          <p className="eyebrow mt-8 text-muted-foreground">
+            Ou ligue para (11) 9 1747-0620 — Seg–Sex: 09h–18h · Sáb: 09h–13h
+          </p>
         </Reveal>
       </div>
     </section>
