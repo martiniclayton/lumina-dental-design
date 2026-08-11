@@ -39,7 +39,7 @@ export function Navbar() {
             scrolled ? "text-ink" : "text-background",
           )}
         >
-          <span className="font-display text-[1.6rem] leading-none tracking-[0.02em]">Lumière</span>
+          <span className="font-display text-[1.35rem] font-medium leading-none tracking-[-0.01em]">Lumière</span>
           <span
             className={cn(
               "eyebrow hidden text-[0.55rem] sm:block",
@@ -97,7 +97,7 @@ export function Navbar() {
         )}
       >
         <div className="flex h-20 items-center justify-between px-6">
-          <span className="font-display text-[1.6rem] text-ink">Lumière</span>
+          <span className="font-display text-[1.35rem] font-medium tracking-tight text-ink">Lumière</span>
           <button aria-label="Fechar menu" onClick={() => setOpen(false)} className="text-ink">
             <X className="size-6" strokeWidth={1} />
           </button>
@@ -108,7 +108,7 @@ export function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="border-b border-border py-5 font-display text-2xl text-ink"
+              className="border-b border-border py-5 font-display text-xl font-medium tracking-tight text-ink"
             >
               {l.label}
             </a>

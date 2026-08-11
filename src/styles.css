@@ -12,8 +12,8 @@
   --radius-2xl: 4px;
   --radius-3xl: 6px;
   --radius-4xl: 8px;
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter Tight", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -89,14 +89,14 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    font-weight: 300;
-    letter-spacing: -0.01em;
+    font-weight: 500;
+    letter-spacing: -0.02em;
   }
 }
 
 @utility eyebrow {
   font-size: 0.6875rem;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 500;
 }
@@ -105,6 +105,16 @@
   background: oklch(1 0 0 / 0.55);
   backdrop-filter: blur(18px) saturate(140%);
   border: 1px solid oklch(1 0 0 / 0.6);
+}
+
+@utility glass-light {
+  background: rgb(255 255 255 / 0.1);
+  backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgb(255 255 255 / 0.6);
+
+  &:hover {
+    background: rgb(255 255 255 / 0.18);
+  }
 }
 
 @utility hairline {

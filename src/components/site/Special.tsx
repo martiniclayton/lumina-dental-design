@@ -25,7 +25,7 @@ export function Special() {
         <div className="grid gap-8 md:grid-cols-12">
           <Reveal className="md:col-span-6">
             <p className="eyebrow text-lilac">Filosofia</p>
-            <h2 className="mt-6 text-[2.4rem] leading-[1.08] md:text-[3.4rem]">
+            <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
               O que nos torna especial
             </h2>
           </Reveal>
@@ -45,10 +45,10 @@ export function Special() {
               className="group relative border-b border-border px-0 py-12 transition-colors duration-500 md:border-b-0 md:border-r md:px-10 md:py-14 md:first:pl-0 md:last:border-r-0"
             >
               <div className="absolute top-12 right-0 h-px w-0 bg-lilac transition-all duration-700 group-hover:w-10 md:right-10" />
-              <span className="font-display text-[2.6rem] leading-none text-lilac-soft transition-colors duration-500 group-hover:text-lilac">
+              <span className="font-display text-[1.7rem] font-medium leading-none text-lilac-soft transition-colors duration-500 group-hover:text-lilac">
                 {it.n}
               </span>
-              <h3 className="mt-10 text-2xl">{it.title}</h3>
+              <h3 className="mt-10 text-xl font-medium tracking-tight">{it.title}</h3>
               <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
                 {it.text}
               </p>

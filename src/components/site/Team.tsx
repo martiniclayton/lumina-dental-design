@@ -31,7 +31,7 @@ export function Team() {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <Reveal className="max-w-2xl">
           <p className="eyebrow text-lilac">Equipe</p>
-          <h2 className="mt-6 text-[2.2rem] leading-[1.1] md:text-[3.2rem]">
+          <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
             Especialistas que cuidam de cada detalhe.
           </h2>
         </Reveal>
@@ -54,7 +54,7 @@ export function Team() {
                 />
               </div>
               <p className="mt-8 eyebrow text-lilac">{m.role}</p>
-              <h3 className="mt-3 text-2xl">{m.name}</h3>
+              <h3 className="mt-3 text-xl font-medium tracking-tight">{m.name}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{m.text}</p>
               <a
                 href="#contato"

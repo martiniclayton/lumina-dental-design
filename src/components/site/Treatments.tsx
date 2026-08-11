@@ -20,7 +20,7 @@ export function Treatments() {
         <div className="grid gap-8 md:grid-cols-12 md:items-end">
           <Reveal className="md:col-span-7">
             <p className="eyebrow text-lilac">Tratamentos</p>
-            <h2 className="mt-6 text-[2.2rem] leading-[1.1] md:text-[3.2rem]">
+            <h2 className="mt-6 text-[1.9rem] font-medium leading-[1.15] tracking-tight md:text-[2.6rem]">
               Tratamentos pensados para você.
             </h2>
           </Reveal>
@@ -47,7 +47,7 @@ export function Treatments() {
               className="size-full min-h-56 object-cover"
             />
             <div className="absolute inset-0 bg-lilac/8" />
-            <p className="absolute bottom-6 left-6 max-w-[14ch] font-display text-xl text-ink">
+            <p className="absolute bottom-6 left-6 max-w-[14ch] font-display text-lg font-medium tracking-tight text-ink">
               Diagnóstico digital em cada etapa
             </p>
           </Reveal>
@@ -90,7 +90,7 @@ function TreatmentCard({
           strokeWidth={1.2}
         />
       </div>
-      <h3 className="mt-16 text-[1.55rem] leading-snug">{name}</h3>
+      <h3 className="mt-16 text-[1.2rem] font-medium leading-snug tracking-tight">{name}</h3>
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{text}</p>
     </Reveal>
   );

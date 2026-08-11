@@ -29,7 +29,7 @@ export function About() {
         <div className="md:col-span-5 md:col-start-8 md:pt-10">
           <Reveal>
             <p className="eyebrow text-lilac">A clínica</p>
-            <h2 className="mt-6 text-[2.2rem] leading-[1.1] md:text-[3rem]">
+            <h2 className="mt-6 text-[1.8rem] font-medium leading-[1.18] tracking-tight md:text-[2.4rem]">
               Conheça uma nova forma de cuidar do seu sorriso.
             </h2>
             <div className="mt-8 space-y-5 text-sm leading-relaxed text-muted-foreground">

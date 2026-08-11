@@ -20,7 +20,7 @@ export function CtaBand() {
       <div className="relative mx-auto max-w-[1400px] px-6 text-center md:px-10">
         <Reveal>
           <p className="eyebrow text-lilac">Agendamento</p>
-          <h2 className="mx-auto mt-8 max-w-[20ch] text-[2.4rem] leading-[1.06] md:text-[3.8rem]">
+          <h2 className="mx-auto mt-8 max-w-[24ch] text-[2rem] font-medium leading-[1.12] tracking-tight md:text-[2.9rem]">
             Seu próximo sorriso começa aqui.
           </h2>
           <p className="mx-auto mt-8 max-w-md text-sm leading-relaxed text-muted-foreground">
