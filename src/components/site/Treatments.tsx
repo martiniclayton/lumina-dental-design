@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import detailImg from "@/assets/detail.jpg";
 import { Reveal } from "./Reveal";
 
@@ -6,6 +7,7 @@ const treatments = [
   {
     n: "01",
     name: "Harmonização Facial",
+    href: "/harmonizacao-facial",
     text: "Procedimentos cuidadosamente planejados para realçar sua beleza natural, preservando suas características com segurança e resultados harmônicos.",
   },
   {
@@ -90,11 +92,13 @@ function TreatmentCard({
   name,
   text,
   delay,
+  href,
 }: {
   n: string;
   name: string;
   text: string;
   delay: number;
+  href?: string;
 }) {
   return (
     <Reveal
@@ -110,12 +114,21 @@ function TreatmentCard({
       </div>
       <h3 className="mt-16 text-[1.2rem] font-medium leading-snug tracking-tight">{name}</h3>
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{text}</p>
-      <a
-        href="#contato"
-        className="eyebrow mt-8 inline-block border-b border-lilac/50 pb-1 text-ink transition-colors duration-300 hover:text-lilac"
-      >
-        Saiba mais
-      </a>
+      {href ? (
+        <Link
+          to={href}
+          className="eyebrow mt-8 inline-block border-b border-lilac/50 pb-1 text-ink transition-colors duration-300 hover:text-lilac"
+        >
+          Saiba mais
+        </Link>
+      ) : (
+        <a
+          href="#contato"
+          className="eyebrow mt-8 inline-block border-b border-lilac/50 pb-1 text-ink transition-colors duration-300 hover:text-lilac"
+        >
+          Saiba mais
+        </a>
+      )}
     </Reveal>
   );
 }
