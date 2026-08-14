@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as HarmonizacaoFacialRouteImport } from './routes/harmonizacao-facial'
+import { Route as OrtodontiaRouteImport } from './routes/ortodontia'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,40 @@ const HarmonizacaoFacialRoute = HarmonizacaoFacialRouteImport.update({
   path: '/harmonizacao-facial',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OrtodontiaRoute = OrtodontiaRouteImport.update({
+  id: '/ortodontia',
+  path: '/ortodontia',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/harmonizacao-facial': typeof HarmonizacaoFacialRoute
+  '/ortodontia': typeof OrtodontiaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/harmonizacao-facial': typeof HarmonizacaoFacialRoute
+  '/ortodontia': typeof OrtodontiaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/harmonizacao-facial': typeof HarmonizacaoFacialRoute
+  '/ortodontia': typeof OrtodontiaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/harmonizacao-facial'
+  fullPaths: '/' | '/harmonizacao-facial' | '/ortodontia'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/harmonizacao-facial'
-  id: '__root__' | '/' | '/harmonizacao-facial'
+  to: '/' | '/harmonizacao-facial' | '/ortodontia'
+  id: '__root__' | '/' | '/harmonizacao-facial' | '/ortodontia'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   HarmonizacaoFacialRoute: typeof HarmonizacaoFacialRoute
+  OrtodontiaRoute: typeof OrtodontiaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,13 +75,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof HarmonizacaoFacialRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ortodontia': {
+      id: '/ortodontia'
+      path: '/ortodontia'
+      fullPath: '/ortodontia'
+      preLoaderRoute: typeof OrtodontiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   HarmonizacaoFacialRoute: HarmonizacaoFacialRoute,
+  OrtodontiaRoute: OrtodontiaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
