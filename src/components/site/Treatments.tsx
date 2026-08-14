@@ -13,8 +13,10 @@ const treatments = [
   {
     n: "02",
     name: "Ortodontia",
+    href: "/ortodontia",
     text: "Conquiste o alinhamento ideal com tratamentos ortodônticos personalizados, discretos e eficazes para o seu perfil.",
   },
+
   {
     n: "03",
     name: "Dentística",
