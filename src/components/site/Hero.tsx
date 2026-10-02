@@ -22,7 +22,7 @@ export function Hero() {
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-[1400px] flex-col justify-end px-6 pb-24 md:px-10 md:pb-32">
         <div className="max-w-2xl">
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <div className="hidden flex-wrap items-center gap-x-4 gap-y-2 sm:flex">
             {tags.map((t, i) => (
               <span key={t} className="flex items-center gap-4">
                 {i > 0 && <span aria-hidden className="h-3 w-px bg-background/30" />}
@@ -34,8 +34,13 @@ export function Hero() {
             Seu sorriso merece um cuidado que respeita quem você é.
           </h1>
           <p className="mt-7 max-w-lg text-[0.95rem] leading-relaxed text-background/75">
-            Unimos experiência, tecnologia e um atendimento verdadeiramente humanizado para oferecer
-            tratamentos personalizados com segurança, conforto e resultados naturais.
+            <span className="sm:hidden">
+              Atendimento humanizado, tecnologia de ponta e resultados naturais para o seu sorriso.
+            </span>
+            <span className="hidden sm:inline">
+              Unimos experiência, tecnologia e um atendimento verdadeiramente humanizado para oferecer
+              tratamentos personalizados com segurança, conforto e resultados naturais.
+            </span>
           </p>
           <div className="mt-12 flex flex-wrap items-center gap-8">
             <a
